@@ -1,3 +1,25 @@
+let doorImage1 = 
+document.getElementById('door1');
+let botDoorPath = "https://content.codecademy.com/projects/chore-door/images/robot.svg"
+
+let doorImage2 =
+document.getElementById('door2');
+let beachDoorPath = "https://content.codecademy.com/projects/chore-door/images/beach.svg"
+
+let doorImage3 =
+document.getElementById('door3');
+let spaceDoorPath = "https://content.codecademy.com/projects/chore-door/images/space.svg"
+let startButton = 
+document.getElementById('start');
+
+let closedDoorPath = "https://content.codecademy.com/projects/chore-door/images/closed_door.svg"
+
+ let numClosedDoors =3;
+let openDoor1;
+let openDoor2;
+let openDoor3; 
+let currentlyPlaying = true;
+
 if (door.src === closedDoorPath) {
     return false;
   } else {
