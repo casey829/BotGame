@@ -20,11 +20,22 @@ let openDoor2;
 let openDoor3; 
 let currentlyPlaying = true;
 
+const isBot = (door) => {
+    if(door.src === botDoorPath) {
+        return true;  
+      } else {
+        return false;
+    }
+    };
+    
+    const isClicked  = (door) => {
+
 if (door.src === closedDoorPath) {
     return false;
   } else {
     return true;
   }
+}
   
   
   const playDoor = (door) => {
