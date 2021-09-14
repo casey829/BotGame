@@ -1,16 +1,12 @@
-let doorImage1 = 
-document.getElementById('door1');
+let doorImage1 = document.getElementById('door1');
 let botDoorPath = "https://content.codecademy.com/projects/chore-door/images/robot.svg"
 
-let doorImage2 =
-document.getElementById('door2');
+let doorImage2 =document.getElementById('door2');
 let beachDoorPath = "https://content.codecademy.com/projects/chore-door/images/beach.svg"
 
-let doorImage3 =
-document.getElementById('door3');
+let doorImage3 =document.getElementById('door3');
 let spaceDoorPath = "https://content.codecademy.com/projects/chore-door/images/space.svg"
-let startButton = 
-document.getElementById('start');
+let startButton = document.getElementById('start');
 
 let closedDoorPath = "https://content.codecademy.com/projects/chore-door/images/closed_door.svg"
 
@@ -29,8 +25,7 @@ const isBot = (door) => {
     };
     
     const isClicked  = (door) => {
-
-if (door.src === closedDoorPath) {
+        if (door.src === closedDoorPath) {
     return false;
   } else {
     return true;
@@ -89,6 +84,7 @@ if (door.src === closedDoorPath) {
     startRound();
     }
   }
+  //does are all closed
   const startRound = () => {
     door1.src = closedDoorPath;
     door2.src = closedDoorPath;
